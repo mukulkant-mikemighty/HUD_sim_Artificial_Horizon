@@ -11,7 +11,7 @@ class Serv1(object):
         self.HEADER=8
         self.PORT=5050
         #print("HIIIIII")
-        self.SERVER=socket.gethostbyname(socket.gethostname())#"10.10.10.1"#"127.0.0.1"#"192.168.56.1"#"10.10.10.1" #"192.168.16.1"##socket.gethostbyname(socket.gethostname())
+        self.SERVER="192.168.56.1"#"#socket.gethostbyname(socket.gethostname())#"10.10.10.1"#"127.0.0.1"#"192.168.56.1"#"10.10.10.1" #"192.168.16.1"##socket.gethostbyname(socket.gethostname())
         self.ADDR=(self.SERVER,self.PORT)
         self.FORMAT='utf-8'#format(enumerate)
         self.DISCONNECT_MESSAGE="!DISCONNECT"

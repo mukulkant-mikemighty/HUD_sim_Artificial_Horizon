@@ -8,7 +8,7 @@ class Client1(object):
     def __init__(self):
         self.HEADER=8
         self.PORT=5050
-        self.SERVER="10.10.10.1"#"127.0.0.1"#"192.168.56.1"#"10.10.10.1"#"192.168.16.1"
+        self.SERVER="192.168.56.1"#"127.0.0.1"#"192.168.56.1"#"10.10.10.1"#"192.168.16.1"
         self.FORMAT='utf-8'#format(enumerate)
         self.DISCONNECT_MESSAGE="!DISCONNECT"
         self.ADDR=(self.SERVER,self.PORT)
@@ -34,6 +34,7 @@ class Client1(object):
             msg["pitch"]=input("Enter value for pitch:")
             msg["yaw"]=input("Enter value for yaw:")
             self.send(json.dumps(msg).encode(self.FORMAT))
+            
             """
             msg=input("Enter value for roll:")
             self.send(msg)
